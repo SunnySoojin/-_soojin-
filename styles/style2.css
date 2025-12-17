@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "OTEnjoystoriesBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
+      format("woff"),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
+      format("opentype");
+}
+.moirai-one-regular {
+  font-family: "Moirai One", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+html{
+  font-size: 10px;
+}
+:root{
+  --main-color: #5B2386;
+  --sub-color:#FCEE21;
+  --text-color:#fff;
+  --placeholder-color:#BABCBE;  
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#BABCBE;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #5B2386;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.4rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+img{
+  box-sizing: border-box;
+  display: block;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/*----mobile start----*/
+@media screen and (max-width:768px){
+  .main{
+    margin: 0;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 767px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+}
+header img{
+  width: 278px;
+  height: 130px;
+  margin-bottom: 32px;
+}
+header p{
+  font-family: 'joyfulstory','sans serif';
+  font-size: 2.2rem;
+  color: var(--sub-color);
+
+}
+section{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: normal;
+}
+section img{
+  width: 20px;
+  align-items: center;
+  height: 18px;
+}
+/* 이미지 텍스트랑 가운데 정렬 불일치 ----*/
+Section strong{
+  font-weight: 700;
+}
+form{
+  text-align: center;
+  line-height: normal;
+  margin: 0 20px;
+  position: relative;
+}
+form input{
+  width: 156px;
+  height: 38px;
+  line-height: 38px;
+  border:none;
+  border-radius: 8px;
+}
+form input::placeholder{
+  text-align: center;
+  font-size: 1.4rem;
+  color:var(--placeholder-color);
+}
+form button{
+  right: 0;
+  top: 0;
+  width: 240px;
+  height: 72px;
+  background-color: var(--sub-color);
+  border-radius: 12px
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--main-color);
+  font-family:'GmarketSansBold','sans-serif';
+  margin-top: 60px;
+  margin-bottom: 68px;
+}
+form img{
+  width: 44px;
+  height: 48px;
+  position: absolute;
+  bottom: 40px;
+  right: 0px;
+}
+.result1, .result2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+
+}
+:is(.result1, .result2) strong{
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 12px;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+ .btn button{
+        font-family: 'GMarketSans','sans serif';
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--main-color);
+        margin-top: 52px;
+    }
+    .btn button:nth-child(1){
+        width: 204px;
+        height: 48px;
+        background-color: var(--sub-color);
+        border-radius: 12px;
+        margin-right: 8px;
+    }
+    .btn button:nth-child(2){
+        width: 102px;
+        height: 48px;
+        background-color: #fff;
+        border-radius: 12px;
+        
+    }
+    .modal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        height: 500px;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        display: none;
+    }
+    .modal p{
+        color: var(--main-color);
+        font-family: 'JoyfulStory', 'sans serif';
+        font-size: 36px;
+    }
+    .modal p:nth-child(1){
+        font-size: 64px;
+    }
+    .modal img{
+        width: 240px;
+        height: 188px;
+        margin-top: 38px;
+    }
+    .modal button{
+        width: 250px;
+        height: 72px;
+        background-color: var(--sub-color);
+        border-radius: 12px;
+        color: var(--main-color);
+        font-family: 'GMarketSans','sans serif';
+        font-size: 1.4rem;
+        font-weight: 700;
+        /* padding: 50px 20px; */
+        
+
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 300;
+        margin-bottom: 48px;
+    }
+    footer img{
+        width: 128px;
+        height: 28px;
+        margin-bottom: 12px;
+    }
+}
+
+
+@media(min-width:800px) {
+    header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px 0;
+}
+
+    header p{
+    font-family: 'JoyfulStory', 'sans serif';
+    color: #F5DF4D;
+    font-size: 3.6rem;
+    margin-top: 52px;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 120px;
+        line-height: normal;
+        font-size: 1.8rem;
+     }
+     section img{
+        width: 36px;
+        align-items: center;
+        height: 32px;
+     }
+     /* 이미지 텍스트랑 가운데 정렬 안맞음------------------- */
+     section strong{
+        font-weight: 700;
+        font-size: 2.4rem;
+     }
+    form{
+        text-align: center;
+        line-height: normal;
+        font-size: 2.4rem;
+        position: relative;
+       
+     }
+     form input{
+        width: 228px;
+        height: 56px;
+        border: none;
+        border-radius: 8px;
+        font-size: 2.4rem;
+     }
+     form input::placeholder{
+        text-align: center;
+        font-size: 2.4rem;
+        color: var(--placeholder-color);
+        font-family: 'GMarketSans', 'sans serif';
+        
+     }
+     form p:nth-child(1){
+        margin-bottom: 20px;
+     }
+     form button{
+        width: 568px;
+        height: 64px;
+        background-color: var(--sub-color);
+        color: var(--main-color);
+        font-family: 'GMarketSans','sans serif';
+        font-size: 2.4rem;
+        font-weight: 700;
+        border-radius: 12px;
+        margin-top: 60px;
+        margin: 120px 0;
+     }
+
+     form button:hover{
+        background-color: #fff;
+        transition: ease 0.3s;
+     }
+    
+     form img{
+        width: 64px;
+        height: 72px;
+        position: absolute;
+        top: 190px;
+        right: 34px;
+     }
+     .result1, .result2{
+        font-size: 2.4rem;
+        font-weight: 300;
+     }
+    :is(.result1, .result2) strong{
+        font-weight: 700;
+        font-size: 72px;
+        margin: 0 12px;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        margin: 120px 0;
+        
+
+    }
+    .btn button{
+        font-family: 'GMarketSans','sans serif';
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: var(--main-color);
+    }
+    .btn button:nth-child(1){
+        width: 364px;
+        height: 64px;
+        background-color: var(--sub-color);
+        border-radius: 12px;
+        margin-right: 12px;
+    }
+    .btn button:nth-child(2){
+        width: 192px;
+        height: 64px;
+        background-color: #fff;
+        border-radius: 12px;
+        
+    }
+    .modal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        height: 500px;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        display: none;
+    }
+
+    .modal{
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        width: 800px;
+        height: 800px;
+        padding: 82px 0;
+        color: var(--main-color);
+        position: absolute;
+        left: 9999px;
+    }
+    .modal p{
+        font-family: 'JoyfulStory', 'sans serif';
+
+    }
+    .modal p:nth-child(1){
+    font-size: 9.6rem;
+    margin-bottom: 4px;
+    }
+    .modal p:nth-child(2){
+    font-size: 3.6rem;
+    font-weight: 400;
+    }
+    .modal button{
+        width: 508px;
+        height: 64px;
+        background-color: #FCEE21;
+        color: #5B2386;
+        font-family: 'GMarketSans', 'sans serif';
+        font-weight: 700;
+        font-size: 2.4rem;
+        border-radius: 12px;
+
+    }
+    .modal img{
+        margin: 40px 0;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 68px;
+    }
+    footer img{
+        margin-bottom: 20px;
+    }
+
+}
